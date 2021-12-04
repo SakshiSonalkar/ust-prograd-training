@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 class CustomerDetails {
     private long accNo;
     private String accType;
