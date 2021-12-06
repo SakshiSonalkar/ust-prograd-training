@@ -5,6 +5,6 @@ public class Flashcards {
         HashMap<String,Integer> flashcards = new HashMap<>();
         flashcards.put("England took over Bombay",1957);
         flashcards.put("Battle at Panipat",1761);
-       Integer.toString()
+       
     }
 }
