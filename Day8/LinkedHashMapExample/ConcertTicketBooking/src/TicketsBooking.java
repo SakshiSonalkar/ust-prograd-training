@@ -75,8 +75,7 @@ public class TicketsBooking {
                     System.out.println("Exiting.......");
                     break;
             }
-        }
+         }
 
-        }
+       }
     }
-
