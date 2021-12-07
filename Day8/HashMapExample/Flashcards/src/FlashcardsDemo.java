@@ -50,7 +50,7 @@ public class FlashcardsDemo {
                             try {
                                 TimeUnit.SECONDS.sleep(5);
                             } catch (InterruptedException ie) {
-                                ie.printStackTrace();
+                                System.out.println("Interrupted");
                             }
                             System.out.println(m.getValue());
                             System.out.println("Do you want to Continue(yes/no):");
