@@ -1,5 +1,4 @@
 //LinkedHashMap example
-
 import java.util.*;
 
 public class TicketsBooking {
