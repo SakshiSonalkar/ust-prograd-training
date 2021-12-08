@@ -32,11 +32,11 @@ public class Rectangle {
         this.breadth = breadth;
     }
 
-    public double area(){
+    public double areaOfRectangle(){
         return length*breadth;
     }
     
-    public double perimeter(){
+    public double perimeterOfRectangle(){
         return (2*length)+(2*breadth);
     }
 }
