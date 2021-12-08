@@ -11,7 +11,7 @@ public class RectangleTest {
         @Test
         public void areaOfRectangleOfLengthTwentyAndBreadthThirtyIsSixHundred() {
             area = new Rectangle(20,30);
-            double actualArea = area.areaOfRectangle();
+            double actualArea = area.area();
             double expectedArea = 600;
             Assertions.assertEquals(actualArea, expectedArea);
         }
@@ -19,7 +19,7 @@ public class RectangleTest {
         @Test
         public void areaOfRectangleOfLengthSixPointOneAndBreadthTwoPointFourIsFourteenPointSixThreeNineNine() {
             area = new Rectangle(6.1,2.4);
-            double actualArea = area.areaOfRectangle();
+            double actualArea = area.area();
             double expectedArea = 14.639999999999999;
             Assertions.assertEquals(actualArea, expectedArea);
         }
@@ -27,7 +27,7 @@ public class RectangleTest {
         @Test
         public void areaOfRectangleOfLengthTwentyTwoPointTwoAndBreadthTwoIsFortyFourPointFour() {
             area = new Rectangle(22.2,2);
-            double actualArea = area.areaOfRectangle();
+            double actualArea = area.area();
             double expectedArea = 44.4;
             Assertions.assertEquals(actualArea, expectedArea);
         }
@@ -35,7 +35,7 @@ public class RectangleTest {
         @Test
         public void areaOfRectangleOfLengthFortyAndBreadthTwoPointOneSixNineIsEightySixPointSevenSix() {
             area = new Rectangle(40,2.169);
-            double actualArea = area.areaOfRectangle();
+            double actualArea = area.area();
             double expectedArea = 86.76;
             Assertions.assertEquals(actualArea, expectedArea);
         }
@@ -44,7 +44,7 @@ public class RectangleTest {
         public void throwsExceptionWhenLengthAndBreadthAreZero() {
             Assertions.assertThrows(IllegalArgumentException.class, () ->{
                 Rectangle area = new Rectangle(0,0);
-                area.areaOfRectangle() ;
+                area.area() ;
             } );
         }
 
@@ -52,7 +52,7 @@ public class RectangleTest {
         public void throwsExceptionWhenLengthMinusOneAndBreadthOne() {
             Assertions.assertThrows(IllegalArgumentException.class, () ->{
                 Rectangle area = new Rectangle(-1,1);
-                area.areaOfRectangle() ;
+                area.area() ;
             } );
         }
 
@@ -60,7 +60,7 @@ public class RectangleTest {
         public void throwsExceptionWhenLengthMinusTwoAndBreadthZero() {
             Assertions.assertThrows(IllegalArgumentException.class, () ->{
                 Rectangle area = new Rectangle(-2,0);
-                area.areaOfRectangle() ;
+                area.area() ;
             } );
         }
 
@@ -79,7 +79,7 @@ public class RectangleTest {
         public void perimeterOfRectangleOfLengthTwoAndBreadthTenIsTwentyFour(){
             perimeter.setLength(2);
             perimeter.setBreadth(10);
-            double actualPerimeter = perimeter.perimeterOfRectangle();
+            double actualPerimeter = perimeter.perimeter();
             double expectedPerimeter = 24;
             Assertions.assertEquals(actualPerimeter, expectedPerimeter);
         }
@@ -88,7 +88,7 @@ public class RectangleTest {
         public void perimeterOfRectangleOfLengthTwoPointFourAndBreadthSixIsSixteenPointEight(){
             perimeter.setLength(2.4);
             perimeter.setBreadth(6);
-            double actualPerimeter = perimeter.perimeterOfRectangle();
+            double actualPerimeter = perimeter.perimeter();
             double expectedPerimeter = 16.8;
             Assertions.assertEquals(actualPerimeter, expectedPerimeter);
         }
@@ -98,7 +98,7 @@ public class RectangleTest {
         public void perimeterOfRectangleOfLengthFourPointSixAndBreadthOnePointTwoIsElevenPointSix(){
             perimeter.setLength(4.6);
             perimeter.setBreadth(1.2);
-            double actualPerimeter = perimeter.perimeterOfRectangle();
+            double actualPerimeter = perimeter.perimeter();
             double expectedPerimeter = 11.6;
             Assertions.assertEquals(actualPerimeter, expectedPerimeter);
         }
@@ -108,7 +108,7 @@ public class RectangleTest {
             Assertions.assertThrows(IllegalArgumentException.class, () ->{
                 perimeter.setLength(0);
                 perimeter.setBreadth(0);
-                perimeter.perimeterOfRectangle() ;
+                perimeter.perimeter() ;
             } );
         }
 
@@ -117,7 +117,7 @@ public class RectangleTest {
             Assertions.assertThrows(IllegalArgumentException.class, () ->{
                 perimeter.setLength(-1);
                 perimeter.setBreadth(4);
-                perimeter.perimeterOfRectangle() ;
+                perimeter.perimeter() ;
             } );
         }
 
@@ -126,7 +126,7 @@ public class RectangleTest {
             Assertions.assertThrows(IllegalArgumentException.class, () ->{
                 perimeter.setLength(-8);
                 perimeter.setBreadth(-5);
-                perimeter.perimeterOfRectangle() ;
+                perimeter.perimeter() ;
             } );
         }
 
