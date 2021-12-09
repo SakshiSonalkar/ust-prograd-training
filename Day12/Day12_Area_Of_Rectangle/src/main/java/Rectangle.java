@@ -33,10 +33,10 @@ public class Rectangle {
     }
 
     public double area(){
-        return length*breadth;
+        return getLength()*getBreadth();
     }
     
     public double perimeter(){
-        return (2*length)+(2*breadth);
+        return (2*getLength())+(2*getBreadth());
     }
 }
