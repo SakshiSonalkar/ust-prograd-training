@@ -1,16 +1,20 @@
-public class Convertor {
+public class Converter {
 
-    public double unitConvertor(double measurement,String fromUnit,String toUnit){
-        if(measurement<=0){
+    public double unitConverter(double value, String fromUnit, String toUnit){
+        if(value <=0){
             throw new IllegalArgumentException("Measurement should not be zero or negative");
         }
         else{
             if(toUnit=="cm"){
-               return  convertToCentimeter(measurement,fromUnit);
+               return  convertToCentimeter(value,fromUnit);
             }else if(toUnit=="m"){
-               return convertToMeter(measurement,fromUnit);
+               return convertToMeter(value,fromUnit);
             }else if(toUnit=="km"){
-                return convertToKiloMeter(measurement,fromUnit);
+                return convertToKiloMeter(value,fromUnit);
+            }else if(toUnit=="kg"){
+                return WeightConverter.convertToKiloGram(value,fromUnit);
+            }else if(toUnit=="g"){
+                return WeightConverter.convertToGram(value,fromUnit);
             }
             else{
                 throw new IllegalArgumentException("Invalid Unit");
@@ -19,52 +23,54 @@ public class Convertor {
         }
     }
 
-    public double add(double firstValue, String firstUnit, double secondValue,String secondUnit){
-        double result = unitConvertor(firstValue,firstUnit,firstUnit) + unitConvertor(secondValue, secondUnit,firstUnit);
+    public double addValue(double firstValue, String firstUnit, double secondValue, String secondUnit){
+        double result = unitConverter(firstValue,firstUnit,firstUnit) + unitConverter(secondValue, secondUnit,firstUnit);
         return result;
     }
 
-    public double sub( double firstValue, String firstUnit, double secondValue,String secondUnit ){
-        double answer = unitConvertor(firstValue,firstUnit,firstUnit) - unitConvertor(secondValue,secondUnit,firstUnit);
+    public double subValue(double firstValue, String firstUnit, double secondValue, String secondUnit ){
+        double answer = unitConverter(firstValue,firstUnit,firstUnit) - unitConverter(secondValue,secondUnit,firstUnit);
         return answer;
     }
 
-    public double convertToCentimeter(double measurement,String fromUnit){
+    public double convertToCentimeter(double value, String fromUnit){
         if(fromUnit=="cm"){
-            return measurement;
+            return value;
         }else if(fromUnit=="m"){
-            return measurement*100;
+            return value *100;
         }else if(fromUnit=="km"){
-            return measurement*100000;
+            return value *100000;
         }else{
             throw new IllegalArgumentException("Invalid Unit");
         }
 
     }
 
-    public double convertToMeter(double measurement,String fromUnit){
+    public double convertToMeter(double value, String fromUnit){
         if(fromUnit=="cm"){
-            return measurement/100;
+            return value /100;
         }else if(fromUnit=="m"){
-            return measurement;
+            return value;
         }else if(fromUnit=="km"){
-            return measurement*1000;
+            return value *1000;
         }else{
             throw new IllegalArgumentException("Invalid Unit");
         }
     }
 
-    public double convertToKiloMeter(double measurement,String fromUnit){
+    public double convertToKiloMeter(double value, String fromUnit){
         if(fromUnit=="cm"){
-            return measurement/100000;
+            return value /100000;
         }else if(fromUnit=="m"){
-            return measurement/1000;
+            return value /1000;
         }else if(fromUnit=="km"){
-            return measurement;
+            return value;
         }else{
             throw new IllegalArgumentException("Invalid Unit");
         }
     }
+
+
 
 
 }

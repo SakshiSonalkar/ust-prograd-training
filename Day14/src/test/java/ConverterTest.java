@@ -4,91 +4,111 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ConvertorTest {
-    private Convertor convertor;
+class ConverterTest {
+    private Converter converter;
+    private WeightConverter weightConverter;
 
     @BeforeEach
     public void setup(){
-        convertor = new Convertor();
+        converter = new Converter();
+        weightConverter = new WeightConverter();
     }
 
     @Nested
     public class UnitConversionTest{
         @Test
         public void checkIfOneCentimeterIsOneCentimeter(){
-            double actualMeasurement= convertor.unitConvertor(1,"cm","cm");
+            double actualMeasurement= converter.unitConverter(1,"cm","cm");
             double expectedMeasurement = 1;
             assertEquals(expectedMeasurement,actualMeasurement);
         }
 
-        @Test
-        public void checkIfOneMeterIsHundredCentimeter(){
-            double actualMeasurement= convertor.unitConvertor(1,"m","cm");
-            double expectedMeasurement = 100;
-            assertEquals(expectedMeasurement,actualMeasurement);
-        }
 
         @Test
         public void checkIfHundredCentimeterIsPointZeroZeroOneKilometer(){
-            double actualMeasurement= convertor.unitConvertor(100,"cm","km");
+            double actualMeasurement= converter.unitConverter(100,"cm","km");
             double expectedMeasurement = 0.001;
             assertEquals(expectedMeasurement,actualMeasurement);
         }
 
         @Test
         public void checkIfTwoMeterIsPointZeroZeroTwoKilometer(){
-            double actualMeasurement= convertor.unitConvertor(2,"m","km");
+            double actualMeasurement= converter.unitConverter(2,"m","km");
             double expectedMeasurement = 0.002;
             assertEquals(expectedMeasurement,actualMeasurement);
         }
 
         @Test
         public void checkIfTenCentimeterIsPointZeroOneMeter(){
-            double actualMeasurement= convertor.unitConvertor(10,"cm","m");
+            double actualMeasurement= converter.unitConverter(10,"cm","m");
             double expectedMeasurement = 0.1;
             assertEquals(expectedMeasurement,actualMeasurement);
         }
 
         @Test
+        public void checkIfOneHundredGramIsZeroPointOneKiloGram(){
+            double actualMeasurement= weightConverter.unitConverter(100,"g","kg");
+            double expectedMeasurement = 0.1;
+            assertEquals(expectedMeasurement,actualMeasurement);
+        }
+
+
+        @Test
+        public void checkIfZeroPointOneKilogramIsHundredGram(){
+            double actualMeasurement= weightConverter.unitConverter(0.1,"kg","g");
+            double expectedMeasurement = 100;
+            assertEquals(expectedMeasurement,actualMeasurement);
+        }
+
+
+        @Test
         public void throwsIllegalArgumentExceptionIfMeasurementIsNegative(){
             assertThrows(IllegalArgumentException.class,() -> {
-                convertor.unitConvertor(-1,"cm","cm");});
+                converter.unitConverter(-1,"cm","cm");});
         }
 
         @Test
         public void throwsIllegalArgumentExceptionIfMeasurementIsZero(){
             assertThrows(IllegalArgumentException.class,() -> {
-                convertor.unitConvertor(0,"cm","cm");});
+                converter.unitConverter(0,"cm","cm");});
         }
 
         @Test
         public void throwsIllegalArgumentExceptionIfMeasurementIsInvalid(){
             assertThrows(IllegalArgumentException.class,() -> {
-                convertor.unitConvertor(10,"mm","cm");});
+                converter.unitConverter(10,"mm","cm");});
         }
 
     }
 
     @Nested
-    public class AddTest{
+    public class AddValueTest{
         @Test
         public void checkIfOneMeterPlusHundredCentimeterIsTwoMeter(){
-            double actualMeasurement= convertor.add(1,"m",100,"cm");
+            double actualMeasurement= converter.addValue(1,"m",100,"cm");
             double expectedMeasurement = 2;
             assertEquals(expectedMeasurement,actualMeasurement);
         }
 
         @Test
         public void checkIfTwoHundredCentimeterPlusOneKilometerIsTwoLakhOneHundredCentimeter(){
-            double actualMeasurement= convertor.add(100,"cm",2,"km");
+            double actualMeasurement= converter.addValue(100,"cm",2,"km");
             double expectedMeasurement = 200100;
             assertEquals(expectedMeasurement,actualMeasurement);
         }
 
         @Test
+        public  void checkIfTenGramPlusOneKiligramsIsOneThousandTen() {
+            double actualMeasurement = weightConverter.addValue(10, "g", 1, "kg");
+            double expectedMeasurement = 1010;
+            assertEquals(expectedMeasurement, actualMeasurement);
+        }
+        
+
+        @Test
         public void throwsIllegalArgumentExceptionIfFirstValueIsNegative() {
             assertThrows(IllegalArgumentException.class, () -> {
-                convertor.add(-1, "cm", 100, "m");
+                converter.addValue(-1, "cm", 100, "m");
             });
         }
 
@@ -96,20 +116,20 @@ class ConvertorTest {
         @Test
         public void throwsIllegalArgumentExceptionIfUnitOfFirstValueIsInvalid () {
             assertThrows(IllegalArgumentException.class, () -> {
-                    convertor.add(1, "mm", 2, "km");});
+                    converter.addValue(1, "mm", 2, "km");});
             }
 
         @Test
         public void throwsIllegalArgumentExceptionIfSecondValueIsZero() {
             assertThrows(IllegalArgumentException.class, () -> {
-                convertor.add(100, "cm", 0, "m");
+                converter.addValue(100, "cm", 0, "m");
             });
         }
 
         @Test
         public void throwsIllegalArgumentExceptionIfSecondUnitIsInvalid(){
             assertThrows(IllegalArgumentException.class, () -> {
-                convertor.add(10, "km", 10, "N");
+                converter.addValue(10, "km", 10, "N");
             });
         }
 
@@ -118,33 +138,41 @@ class ConvertorTest {
 
 
     @Nested
-    public class SubtractTest{
+    public class SubtractValueTest{
 
     @Test
     public void checkIfOneMeterMinusFiftyCentimeterIsPointFiveMeter(){
-        double actualMeasurement= convertor.sub(1,"m",50,"cm");
+        double actualMeasurement= converter.subValue(1,"m",50,"cm");
         double expectedMeasurement = 0.5;
         assertEquals(expectedMeasurement,actualMeasurement);
     }
 
     @Test
     public void checkIfTwoThousanddCentimeterMinusOneMeterIsOneThousandNineHundredCentimeter(){
-        double actualMeasurement= convertor.sub(2000 ,"cm",1,"m");
+        double actualMeasurement= converter.subValue(2000 ,"cm",1,"m");
         double expectedMeasurement = 1900;
         assertEquals(expectedMeasurement,actualMeasurement);
     }
 
     @Test
     public void checkIfSixKilometerMinusTwoHundredCentimeterIsFivePointNineNineEightKilometer(){
-        double actualMeasurement= convertor.sub(6,"km",200,"cm");
+        double actualMeasurement= converter.subValue(6,"km",200,"cm");
         double expectedMeasurement = 5.998;
         assertEquals(expectedMeasurement,actualMeasurement);
     }
 
+
+        @Test
+        public  void checkIfTenGramMinusOneGramIsNineGram(){
+            double actualMeasurement = weightConverter.subValue(10,"g",1,"g");
+            double expectedMeasurement = 9;
+            assertEquals(expectedMeasurement,actualMeasurement);
+        }
+
         @Test
         public void throwsExceptionIfFirstValueIsMinusTwo() {
             assertThrows(IllegalArgumentException.class, () -> {
-                convertor.sub(-2, "cm", 100, "m");
+                converter.subValue(-2, "cm", 100, "m");
             });
         }
 
@@ -152,27 +180,25 @@ class ConvertorTest {
         @Test
         public void throwsExceptionIfUnitOfFirstValueIsWrong() {
             assertThrows(IllegalArgumentException.class, () -> {
-                convertor.sub(1, "N", 20, "km");});
+                converter.subValue(1, "N", 20, "km");});
         }
 
         @Test
         public void throwsExceptionIfSecondValueIsZero() {
             assertThrows(IllegalArgumentException.class, () -> {
-                convertor.sub(86, "cm", 0, "cm");
+                converter.subValue(86, "cm", 0, "cm");
             });
         }
 
         @Test
         public void throwsExceptionIfUnitOfSecondValueIsInvalid(){
             assertThrows(IllegalArgumentException.class, () -> {
-                convertor.sub(100, "m", 10, "A");
+                converter.subValue(100, "m", 10, "A");
             });
         }
 
 
-
    }
-
 
 
 
