@@ -1,0 +1,10 @@
+Program Started
+User selected option1 in menu
+User selected fromCurrency=INR
+User entered amount 100.0
+User selected toCurrency=GBP
+User got the convertedAmount as 0.99
+----->100.0 INR = 0.99 GBP
+User selected option2 in menu
+User exited the menu
+Program Ended
