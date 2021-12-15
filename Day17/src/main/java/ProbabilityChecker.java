@@ -69,5 +69,4 @@ public class ProbabilityChecker {
         return eventOneProbability + eventTwoProbability - bothOccurringTogether;
     }
 
-
 }
