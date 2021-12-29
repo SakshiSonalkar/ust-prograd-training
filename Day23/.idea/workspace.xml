@@ -5,53 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdc20d21-c373-4598-ac6f-9494935348d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Day21/HelloUST/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/src/main/java/com/example/Calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/src/main/java/com/example/Calculator/CalculatorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/Calculator/src/test/java/com/example/Calculator/CalculatorApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/src/main/java/com/example/EmployeeDetails/EmployeeDetailsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/src/main/java/com/example/EmployeeDetails/EmployeeOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/src/main/java/com/example/EmployeeDetails/EmployeeTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/src/test/java/com/example/EmployeeDetails/EmployeeDetailsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/src/main/java/com/example/MvcDemo/MvcController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/src/main/java/com/example/MvcDemo/MvcDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/src/test/java/com/example/MvcDemo/MvcDemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day22/EmployeeDetails/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/src/main/java/com/example/HelloUST/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/src/main/java/com/example/HelloUST/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/src/main/java/com/example/HelloUST/HelloUstApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/src/main/java/com/example/HelloUST/HelloUstApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloUST/src/test/java/com/example/HelloUST/HelloUstApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day21/HelloUST/src/test/java/com/example/HelloUST/HelloUstApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcDemo/src/main/resources/templates/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MvcDemo/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcDemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MvcDemo/src/main/java/com/example/MvcDemo/MvcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MvcDemo/src/main/java/com/example/MvcDemo/MvcController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -63,6 +35,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -88,5 +61,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
