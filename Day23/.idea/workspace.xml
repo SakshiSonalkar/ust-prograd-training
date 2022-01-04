@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdc20d21-c373-4598-ac6f-9494935348d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MvcDemo/src/main/resources/templates/details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MvcDemo/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/.idea/BankingApplication-MVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/src/main/java/com/bank/BankingApplication/BankingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day25/BankingApplication-MVC/BankingApplication/src/test/java/com/bank/BankingApplication/BankingApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MvcDemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MvcDemo/src/main/java/com/example/MvcDemo/MvcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MvcDemo/src/main/java/com/example/MvcDemo/MvcController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,16 +38,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="22dldQevQcywL9xwbG828gtP8PG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Day31/relations" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,5 +74,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

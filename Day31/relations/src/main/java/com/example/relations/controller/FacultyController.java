@@ -25,7 +25,7 @@ public class FacultyController {
         return service.getFacultyById(id);
     }
 
-    @GetMapping("/faculty/new") // localhost:3000/student/new?name=some&age=xx
+    @GetMapping("/faculty/new") // localhost:3000/faculty/new?name=some&age=xx
     public Faculty create(HttpServletRequest request) {
         String name = request.getParameter("name");
 

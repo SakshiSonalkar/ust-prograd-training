@@ -4,9 +4,11 @@ import com.example.relations.controller.StudentController;
 import com.example.relations.entity.Student;
 import com.example.relations.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class StudentService {
 
     @Autowired

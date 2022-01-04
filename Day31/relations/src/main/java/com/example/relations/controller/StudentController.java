@@ -53,7 +53,7 @@ public class StudentController {
         return service.save(student);
     }
 
-    @GetMapping("/student/{studentId}/add-course/{courseId}") // lh:3000/student/2/assign-faculty/3
+    @GetMapping("/student/{studentId}/add-course/{courseId}") // lh:3000/student/2/add-course/6
     public Student addCourse(@PathVariable Long studentId, @PathVariable Long courseId){
         Student student = service.getStudentById(studentId);
         Course course = courseService.getCourseById(courseId);

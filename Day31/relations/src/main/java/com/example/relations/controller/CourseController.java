@@ -13,22 +13,22 @@ import java.util.List;
 @RestController
 public class CourseController {
     @Autowired
-    private CourseService service;
+    private CourseService courseService;
     @GetMapping("/courses")
     public List<Course> list() {
-        return service.getAllCourses();
+        return courseService.getAllCourses();
     }
 
     @GetMapping("/course/{id}")
     public Course getStudent(@PathVariable Long id) {
-        return service.getCourseById(id);
+        return courseService.getCourseById(id);
     }
 
-    @GetMapping("/course/new") // localhost:3000/student/new?name=some&age=xx
+    @GetMapping("/course/new") // localhost:3000/student/new?name=some
     public Course create(HttpServletRequest request) {
         String name = request.getParameter("name");
 
         Course course = new Course(name);
-        return service.save(course);
+        return courseService.save(course);
     }
 }
