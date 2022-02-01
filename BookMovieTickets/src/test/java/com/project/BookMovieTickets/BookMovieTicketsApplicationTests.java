@@ -1,10 +1,10 @@
-package com.example.movieBooking;
+package com.project.BookMovieTickets;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MovieBookingApplicationTests {
+class BookMovieTicketsApplicationTests {
 
 	@Test
 	void contextLoads() {
