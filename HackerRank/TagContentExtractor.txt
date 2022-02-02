@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+
+        String pattern = "<([^>]+)>([^<>]+)</\\1>";
+        Pattern p = Pattern.compile(pattern);
+
+        Scanner input = new Scanner(System.in);
+        int testCases = Integer.parseInt(input.nextLine());
+        while(testCases > 0){
+            String line = input.nextLine();
+
+            Matcher m = p.matcher(line);
+            boolean match = true;
+            while(m.find( )){
+                System.out.println(m.group(2));
+                match = false;
+            } 
+            if(match) {
+                System.out.println("None");
+            }
+            testCases--;
+        }
+    }
+
+                    
+     
+  }
